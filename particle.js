@@ -3,11 +3,12 @@
 // Acceleration = change in speed of velocity (compounded over time)
 
 class Particle {
-    constructor(x, y) {
+    constructor(x, y, hue) {
         this.pos = createVector(x, y);
         this.vel = createVector(0, 0);
         this.acc = p5.Vector.random2D();
         this.acc.mult(random(0.05));
+        this.hue = hue;
 
         this.colorAlpha = 255;
         this.done = false;
@@ -24,7 +25,7 @@ class Particle {
 
     display() {
         noStroke();
-        fill(255, 0, 0, this.colorAlpha);
+        fill(this.hue, random(255), this.colorAlpha);
         ellipse(this.pos.x, this.pos.y, 2, 2);
     }
 

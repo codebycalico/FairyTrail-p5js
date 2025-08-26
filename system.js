@@ -1,13 +1,14 @@
 class System {
-    constructor(x, y) {
+    constructor(x, y, hue) {
         this.x = x;
         this.y = y;
         this.particles = [];
         this.numParticles = 100;
+        this.hue = hue;
         for(let i = 0; i < this.numParticles; i++) {
-            this.particles.push(new Particle(this.x, this.y));
+            this.particles.push(new Particle(this.x, this.y, this.hue));
         }
-        
+
         this.done = false;
     }
 

@@ -42,7 +42,7 @@ function setup() {
   colorMode(HSB);
 
   video = createCapture(VIDEO);
-  //video.hide();
+  video.hide();
 
   // .detect looks at one image one time
   // .detectStart continuously detects

@@ -16,8 +16,6 @@ let hueArray = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250]
 let video;
 let bodyPose;
 let poses = [];
-let lerpedX = 0;
-let lerpedY = 0;
 let lastPersonSeen;
 
 function preload() {
@@ -38,7 +36,7 @@ function idle() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   colorMode(HSB);
 
   video = createCapture(VIDEO);
@@ -51,6 +49,10 @@ function setup() {
 }
 
 function draw() {
+  push()
+  translate(width, 0);
+  scale(-1, 1);
+
   background(0);
 
   if(poses.length > 0) {
@@ -117,6 +119,7 @@ function draw() {
   //y2 = map(cosY, -1, 1, 0, height - (height/4));
 
   //ellipse(x2, y2, 50, 50);
+  pop();
 }
 
 function mouseClicked() {

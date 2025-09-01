@@ -69,8 +69,8 @@ function draw() {
         // create the particle system there and break out of the
         // keypoint loop
         if(poses[i].keypoints[j].confidence > 0.5) {
-          particleSystem.push(new System(poses[i].keypoints[0].x,
-                                          poses[i].keypoints[0].y,
+          particleSystem.push(new System(poses[i].keypoints[j].x,
+                                          poses[i].keypoints[j].y,
                                           hueArray[i]
           ))
           break;

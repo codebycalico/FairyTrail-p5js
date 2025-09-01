@@ -20,7 +20,7 @@ class Particle {
         this.vel.add(this.acc);
         this.pos.add(this.vel);
 
-        this.colorAlpha -= 4;
+        this.colorAlpha -= 2.5;
     }
 
     display() {

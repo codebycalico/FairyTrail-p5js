@@ -3,7 +3,7 @@ class System {
         this.x = x;
         this.y = y;
         this.particles = [];
-        this.numParticles = 100;
+        this.numParticles = 30;
         this.hue = hue;
         for(let i = 0; i < this.numParticles; i++) {
             this.particles.push(new Particle(this.x, this.y, this.hue));

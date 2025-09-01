@@ -73,6 +73,8 @@ function draw() {
                                           poses[i].keypoints[j].y,
                                           hueArray[i]
           ))
+          // to have a particle system at each keypoint,
+          // remove break
           break;
         }
       }

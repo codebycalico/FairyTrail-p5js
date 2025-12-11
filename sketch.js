@@ -50,7 +50,7 @@ function setup() {
 
 function draw() {
   push()
-  translate(width, 0);
+  translate(width/1.5, 0);
   scale(-1, 1);
 
   background(0);

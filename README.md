@@ -8,6 +8,6 @@ Detecting and moving with one person:
 
 <img width="768" height="775" alt="image" src="https://github.com/user-attachments/assets/987c6e0d-1fd8-4944-bf71-45cd90f64824" />
 
-Fireworks when no person is detecte:
+Fireworks when no person is detected:
 <img width="914" height="841" alt="image" src="https://github.com/user-attachments/assets/fedae761-3f09-4804-920f-2b82fdcffa21" />
 <img width="959" height="851" alt="image" src="https://github.com/user-attachments/assets/57c65d7b-021e-4cfd-81ef-b9ee2ce9ffe2" />
